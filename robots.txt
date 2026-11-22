@@ -1,0 +1,4 @@
+# 独自ドメイン運用時にドメイン直下で有効になります
+User-agent: *
+Allow: /
+Sitemap: https://livmakers.github.io/yamada-edu-hp/sitemap.xml
