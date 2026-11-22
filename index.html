@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="株式会社ヤマダ エデュケーション事業部｜CEOキッズアカデミー 加盟パートナー募集。人間力高く、稼ぐ力を子供から。">
+<title>ヤマダ エデュケーション CEOキッズ加盟募集</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,800;1,6..96,500;1,6..96,700&family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+/* Layout: 夜明けの藍（ミッドナイトネイビー）×シャンパンゴールド。全面写真のヒーロー、巨大な欧文透かし、明朝の見出し、スクロールで立ち上がる演出 */
+:root{
+  --bg:#fbfaf6; --surface:#ffffff; --ink:#111a3a; --ink-2:#56607d; --line:#e3e1d8;
+  --navy:#0c1640; --navy-2:#17245e; --on-navy:#f6f2e6;
+  --gold:#c9a14a; --gold-2:#f0d78c; --gold-ink:#0c1640;
+  --coral:#ef6f5a; --ph:#b4560a; --ph-bg:#fff1d8; --wm:rgba(17,26,58,.06);
+  --f-jp-display:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+  --f-en:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --f-body:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;
+  --wrap:1180px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0a1030; --surface:#111a44; --ink:#eef0f8; --ink-2:#a9b0cc; --line:#243064;
+  --navy:#060b24; --navy-2:#0f1a4a; --on-navy:#f6f2e6; --gold:#d9b25a; --gold-2:#f3dc95;
+  --coral:#ff8a75; --ph:#ffbd70; --ph-bg:#3a2810; --wm:rgba(240,215,140,.06); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0a1030; --surface:#111a44; --ink:#eef0f8; --ink-2:#a9b0cc; --line:#243064;
+  --navy:#060b24; --navy-2:#0f1a4a; --on-navy:#f6f2e6; --gold:#d9b25a; --gold-2:#f3dc95;
+  --coral:#ff8a75; --ph:#ffbd70; --ph-bg:#3a2810; --wm:rgba(240,215,140,.06); color-scheme:dark}
+
+*{box-sizing:border-box}
+html,body{margin:0}
+[hidden]{display:none!important}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--navy)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.en{font-family:var(--f-en)}
+.num{font-family:var(--f-en);font-variant-numeric:lining-nums tabular-nums}
+
+/* gold text */
+.gold-text{background:linear-gradient(100deg,var(--gold) 0%,var(--gold-2) 35%,#fff7d6 50%,var(--gold-2) 65%,var(--gold) 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:-220% 0}}
+
+/* placeholder */
+.ph{background:var(--ph-bg);color:var(--ph);border-bottom:1px dashed var(--ph);padding:0 .3em;font-weight:500;border-radius:2px}
+.ph::after{content:"要確認";font-size:.62em;margin-left:.4em;letter-spacing:.08em;vertical-align:.25em}
+
+/* header */
+header.top{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;transition:background .4s,box-shadow .4s}
+header.top .wrap{display:flex;align-items:center;gap:22px;min-height:72px}
+header.top.scrolled{background:color-mix(in srgb,var(--navy) 92%,transparent);backdrop-filter:blur(10px);box-shadow:0 6px 30px rgba(0,0,0,.18)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--on-navy)}
+.brand .mark{width:40px;height:40px;flex:none}
+.brand b{display:block;font-family:var(--f-en);font-weight:800;font-size:1.05rem;letter-spacing:.14em;line-height:1.1;white-space:nowrap}
+.brand small{display:block;font-size:.66rem;letter-spacing:.12em;opacity:.8}
+nav.gnav{margin-left:auto;display:flex;gap:20px;font-size:.84rem;white-space:nowrap}
+nav.gnav a{text-decoration:none;color:var(--on-navy);opacity:.85;position:relative;padding:4px 0}
+nav.gnav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--gold-2);transition:right .35s}
+nav.gnav a:hover{opacity:1}
+nav.gnav a:hover::after{right:0}
+@media (max-width:1120px){nav.gnav{display:none}header.top .btn{margin-left:auto}}
+@media (max-width:520px){.brand small{display:none}.brand b{font-size:.92rem;letter-spacing:.1em;white-space:nowrap}.brand .mark{width:34px;height:34px}header.top .wrap{min-height:62px;gap:12px}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;font-weight:700;text-decoration:none;border-radius:999px;padding:1em 2em;border:1px solid transparent;cursor:pointer;font-family:var(--f-body);font-size:1rem;white-space:nowrap;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.btn-gold{background:linear-gradient(120deg,var(--gold),var(--gold-2) 50%,var(--gold));background-size:200% 100%;color:var(--gold-ink);box-shadow:0 10px 30px -10px rgba(201,161,74,.8)}
+.btn-gold:hover{transform:translateY(-3px);background-position:100% 0;box-shadow:0 16px 36px -12px rgba(201,161,74,.9)}
+.btn-gold::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-20deg);animation:sweep 3.6s ease-in-out infinite}
+@keyframes sweep{0%,60%{left:-60%}100%{left:130%}}
+.btn-line{color:var(--on-navy);border-color:color-mix(in srgb,var(--on-navy) 55%,transparent)}
+.btn-line:hover{background:color-mix(in srgb,var(--on-navy) 12%,transparent)}
+.btn-sm{padding:.65em 1.3em;font-size:.86rem}
+.btn .arw{transition:transform .25s}
+.btn:hover .arw{transform:translateX(4px)}
+
+/* HERO */
+.hero{position:relative;min-height:min(820px,100svh);display:flex;align-items:flex-end;color:var(--on-navy);overflow:hidden;background:var(--navy)}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;max-width:none;animation:kenburns 22s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1.04)}to{transform:scale(1.16) translate(-1.5%,-1%)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:
+  linear-gradient(180deg,rgba(12,22,64,.55) 0%,rgba(12,22,64,.25) 30%,rgba(12,22,64,.75) 70%,rgba(12,22,64,.96) 100%),
+  radial-gradient(80% 60% at 15% 85%,rgba(201,161,74,.28),transparent 60%)}
+.hero .wm{position:absolute;z-index:2;right:-2vw;top:14%;font-family:var(--f-en);font-style:italic;font-weight:800;font-size:clamp(7rem,24vw,22rem);line-height:.8;color:transparent;-webkit-text-stroke:1.5px rgba(240,215,140,.35);letter-spacing:-.02em;pointer-events:none;white-space:nowrap;animation:drift 18s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translateX(-4vw)}}
+.hero .wrap{position:relative;z-index:3;width:100%;padding-block:150px 72px}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.82rem;letter-spacing:.22em;font-weight:700;color:var(--gold-2)}
+.hero .eyebrow::before{content:"";width:46px;height:1px;background:var(--gold-2)}
+.hero h1{font-family:var(--f-jp-display);font-weight:800;font-size:clamp(2rem,8.6vw,5.6rem);line-height:1.22;margin-top:22px;letter-spacing:.02em;text-shadow:0 4px 40px rgba(0,0,0,.35)}
+.hero h1 .ch{display:inline-block;animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(.5em) rotate(4deg);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+.hero .lead{max-width:36em;margin-top:26px;font-size:clamp(1rem,1.6vw,1.12rem);opacity:.92;animation:fadeup 1s .9s both}
+.hero .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px;animation:fadeup 1s 1.1s both}
+@keyframes fadeup{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.scroll-cue{position:absolute;z-index:3;right:max(16px,env(safe-area-inset-right,0px));bottom:32px;font-size:.7rem;letter-spacing:.3em;writing-mode:vertical-rl;color:var(--gold-2);display:flex;align-items:center;gap:10px}
+.scroll-cue::after{content:"";width:1px;height:60px;background:linear-gradient(var(--gold-2),transparent);animation:cue 2s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@media (max-width:640px){.hero .eyebrow{letter-spacing:.1em;font-size:.74rem}.hero .eyebrow::before{width:24px}.scroll-cue{display:none}.hero .wrap{padding-block:120px 48px}}
+
+/* marquee */
+.marquee{background:linear-gradient(90deg,var(--gold),var(--gold-2),var(--gold));color:var(--gold-ink);overflow:hidden;white-space:nowrap;padding-block:14px;font-family:var(--f-jp-display);font-weight:800;font-size:1.15rem}
+.marquee .track{display:inline-flex;gap:48px;animation:mq 34s linear infinite;padding-left:48px}
+.marquee span{display:inline-flex;align-items:center;gap:48px}
+.marquee span::after{content:"✦";font-size:.8em}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* facts */
+.facts{background:var(--navy);color:var(--on-navy);position:relative;overflow:hidden}
+.facts .grid{display:grid;grid-template-columns:repeat(4,1fr);padding-block:64px}
+.fact{padding:6px 26px;border-left:1px solid rgba(240,215,140,.25)}
+.fact:first-child{border-left:0;padding-left:0}
+.fact .v{font-family:var(--f-en);font-weight:500;font-size:clamp(2.4rem,5vw,3.8rem);line-height:1}
+.fact .v small{font-family:var(--f-body);font-size:.32em;margin-left:.2em;color:var(--on-navy);font-weight:700}
+.fact .k{font-size:.86rem;opacity:.82;margin-top:12px}
+.facts .src{grid-column:1/-1;font-size:.72rem;opacity:.55;margin-top:28px}
+@media (max-width:760px){.facts .grid{grid-template-columns:1fr 1fr;row-gap:36px}.fact:nth-child(3){border-left:0;padding-left:0}}
+
+/* section shell */
+section.sec{padding-block:120px;position:relative;overflow:hidden}
+section.sec.alt{background:var(--surface)}
+.sec .bgwm{position:absolute;top:40px;left:-1vw;font-family:var(--f-en);font-style:italic;font-weight:800;font-size:clamp(5rem,16vw,15rem);line-height:.9;color:var(--wm);white-space:nowrap;pointer-events:none;z-index:0;will-change:transform}
+.sec .wrap{position:relative;z-index:1}
+.kicker{display:inline-flex;align-items:center;gap:12px;font-family:var(--f-en);font-style:italic;font-size:1.05rem;color:var(--gold)}
+.kicker::before{content:"";width:34px;height:1px;background:var(--gold)}
+.sec h2{font-family:var(--f-jp-display);font-weight:800;font-size:clamp(1.8rem,4vw,3rem);line-height:1.4;margin-top:14px}
+.sec .intro{margin-top:20px;color:var(--ink-2);max-width:40em;font-size:1.02rem}
+.head{margin-bottom:56px}
+@media (max-width:760px){section.sec{padding-block:80px}}
+
+/* reveal (resting state stays visible) */
+.rv{transition:transform 1s cubic-bezier(.2,.7,.2,1),opacity 1s}
+.rv.pre{transform:translateY(46px);opacity:.15}
+.rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.24s}.rv.d3{transition-delay:.36s}
+
+/* about split */
+.split{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+.split.rev{grid-template-columns:1fr 1.05fr}
+.split > *{min-width:0}
+@media (max-width:900px){.split,.split.rev{grid-template-columns:1fr;gap:40px}}
+.photo{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 40px 80px -40px rgba(12,22,64,.55)}
+.photo img{width:100%;aspect-ratio:16/10;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.photo:hover img{transform:scale(1.05)}
+.photo-frame{position:relative}
+.photo-frame::before{content:"";position:absolute;inset:22px -22px -22px 22px;border:1px solid var(--gold);border-radius:18px;z-index:-1}
+.photo .cap{position:absolute;left:16px;bottom:14px;background:rgba(12,22,64,.78);color:var(--on-navy);font-size:.78rem;padding:5px 12px;border-radius:999px;backdrop-filter:blur(6px)}
+
+/* ruler roadmap */
+.ruler{margin-top:72px}
+.ruler .bar{position:relative;height:56px;border-bottom:2px solid var(--ink)}
+.ruler .ticks{position:absolute;left:0;right:0;bottom:0;height:22px;background:repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 2.5%),repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 20%);background-size:100% 10px,100% 22px;background-repeat:no-repeat;background-position:bottom}
+.ruler .band{position:absolute;bottom:30px;height:24px;border-radius:999px;font-size:.76rem;font-weight:700;display:flex;align-items:center;padding:0 12px;white-space:nowrap;overflow:hidden}
+.ruler .band.on{left:0;width:80%;background:linear-gradient(90deg,var(--gold),var(--gold-2));color:var(--gold-ink);transform-origin:left;animation:grow 1.6s .3s cubic-bezier(.2,.7,.2,1) both}
+.ruler .band.next{left:81%;width:19%;border:1.5px dashed var(--ink-2);color:var(--ink-2)}
+@keyframes grow{from{transform:scaleX(.05)}to{transform:none}}
+.stages{display:grid;grid-template-columns:repeat(5,1fr)}
+.stage{padding:16px 14px 0 0;min-width:0}
+.stage .age{font-family:var(--f-en);font-style:italic;color:var(--gold);font-size:.9rem}
+.stage h3{font-size:1.02rem;margin-top:2px}
+.stage p{font-size:.84rem;color:var(--ink-2);margin-top:6px;line-height:1.7}
+@media (max-width:760px){.stages{grid-template-columns:1fr 1fr;row-gap:18px}.ruler .band{font-size:.66rem}.ruler .band .long{display:none}}
+
+/* compare */
+.cmp-wrap{overflow-x:auto;border-radius:18px;box-shadow:0 30px 60px -40px rgba(12,22,64,.5)}
+table.cmp{width:100%;border-collapse:collapse;min-width:680px;background:var(--surface)}
+table.cmp th,table.cmp td{text-align:left;padding:20px 22px;border-bottom:1px solid var(--line);vertical-align:top;font-size:.95rem}
+table.cmp thead th{font-size:.84rem;letter-spacing:.08em;padding-block:18px;background:var(--bg)}
+table.cmp thead th.us{background:var(--navy);color:var(--gold-2);font-size:.95rem}
+table.cmp td.us{font-weight:700;background:color-mix(in srgb,var(--gold) 9%,var(--surface));border-left:3px solid var(--gold)}
+table.cmp tbody th{width:16%;color:var(--ink-2);font-weight:500;white-space:nowrap}
+table.cmp td.them{color:var(--ink-2)}
+table.cmp tbody tr{transition:background .25s}
+table.cmp tbody tr:hover td.them{background:color-mix(in srgb,var(--ink) 3%,transparent)}
+
+/* strengths */
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+@media (max-width:900px){.cards3{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:34px 30px;position:relative;overflow:hidden;transition:transform .4s,box-shadow .4s;min-width:0}
+.card:hover{transform:translateY(-8px);box-shadow:0 30px 60px -30px rgba(12,22,64,.4)}
+.card .big{position:absolute;right:14px;top:-6px;font-family:var(--f-en);font-style:italic;font-weight:800;font-size:6.5rem;line-height:1;color:var(--wm);transition:color .4s}
+.card:hover .big{color:color-mix(in srgb,var(--gold) 30%,transparent)}
+.card .lab{font-family:var(--f-en);font-style:italic;color:var(--gold);font-size:.95rem}
+.card h3{font-family:var(--f-jp-display);font-size:1.3rem;line-height:1.55;margin-top:10px;position:relative}
+.card p{margin-top:14px;color:var(--ink-2);font-size:.95rem;position:relative}
+
+.plus{margin-top:72px;border-radius:24px;overflow:hidden;display:grid;grid-template-columns:1fr 1.25fr;background:var(--navy);color:var(--on-navy);box-shadow:0 40px 80px -40px rgba(12,22,64,.7)}
+.plus .pimg{position:relative;min-height:320px}
+.plus .pimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.plus .pimg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 40%,var(--navy))}
+.plus .pbody{padding:48px 44px;min-width:0}
+.plus h3{font-family:var(--f-jp-display);font-size:clamp(1.4rem,2.6vw,1.9rem);line-height:1.5}
+.plus .sub{opacity:.8;margin-top:10px;font-size:.95rem}
+.plus ul{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:18px}
+.plus li{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start}
+.plus li .i{font-family:var(--f-en);font-style:italic;font-weight:700;color:var(--gold-2);font-size:1.3rem;line-height:1.3}
+.plus li b{display:block}
+.plus li span{font-size:.88rem;opacity:.8}
+.badge{display:inline-block;font-size:.7rem;letter-spacing:.12em;border:1px solid var(--gold-2);color:var(--gold-2);padding:1px 10px;border-radius:999px;margin-left:8px;vertical-align:.15em;font-weight:700}
+@media (max-width:900px){.plus{grid-template-columns:1fr}.plus .pimg{min-height:220px}.plus .pimg::after{background:linear-gradient(180deg,transparent 40%,var(--navy))}.plus .pbody{padding:32px 24px}}
+
+/* patterns */
+.patterns{display:grid;gap:18px;margin-top:8px}
+.pat{display:grid;grid-template-columns:64px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start;transition:padding .3s}
+.pat:hover{padding-left:10px}
+.pat .no{font-family:var(--f-en);font-style:italic;font-size:2.4rem;line-height:1;color:var(--gold)}
+.pat .who{font-size:.8rem;color:var(--ink-2);font-weight:700;letter-spacing:.06em}
+.pat h3{font-family:var(--f-jp-display);font-size:1.25rem}
+.pat p{font-size:.92rem;color:var(--ink-2);margin-top:4px}
+
+/* courses */
+.courses{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:900px){.courses{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.courses{grid-template-columns:1fr}}
+.course{background:var(--surface);border-radius:16px;padding:26px 24px;border:1px solid var(--line);position:relative;transition:transform .35s,border-color .35s;min-width:0}
+.course:hover{transform:translateY(-5px);border-color:var(--gold)}
+.course .age{display:inline-block;font-size:.76rem;font-weight:700;background:var(--navy);color:var(--gold-2);padding:3px 12px;border-radius:999px}
+.course h3{font-size:1.04rem;margin-top:14px;line-height:1.55}
+.course p{font-size:.88rem;color:var(--ink-2);margin-top:8px}
+.note{font-size:.8rem;color:var(--ink-2);margin-top:18px}
+
+/* revenue */
+.rev-sec{background:var(--navy);color:var(--on-navy)}
+.rev-sec .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.18;max-width:none}
+.rev-sec .bgwm{color:rgba(240,215,140,.06)}
+.rev-sec .intro,.rev-sec .note{color:var(--on-navy);opacity:.8}
+.rev-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.rev-grid > *{min-width:0}
+@media (max-width:900px){.rev-grid{grid-template-columns:1fr}}
+.pl{background:color-mix(in srgb,var(--navy-2) 80%,transparent);border:1px solid rgba(240,215,140,.25);border-radius:20px;padding:12px 28px;backdrop-filter:blur(6px)}
+.pl .row{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:18px 0;border-bottom:1px solid rgba(240,215,140,.15)}
+.pl .row small{grid-column:1;font-size:.78rem;opacity:.7}
+.pl .row .amt{grid-row:1/3;grid-column:2;align-self:center;font-family:var(--f-en);font-size:1.5rem;font-weight:500}
+.pl .row.total{border-bottom:0}
+.pl .row.total .amt{font-size:clamp(2.2rem,4vw,3rem);font-weight:800}
+.donut-wrap{display:flex;flex-direction:column;align-items:center;gap:18px}
+.donut{width:min(320px,80vw);aspect-ratio:1;position:relative}
+.donut svg{width:100%;height:100%;transform:rotate(-90deg)}
+.donut .c{fill:none;stroke-width:22}
+.donut .bg{stroke:rgba(240,215,140,.15)}
+.donut .fg{stroke:url(#gg);stroke-linecap:round;stroke-dasharray:0 1000;transition:stroke-dasharray 2s cubic-bezier(.2,.7,.2,1)}
+.donut .ctr{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.donut .ctr b{font-family:var(--f-en);font-size:3.4rem;font-weight:800;line-height:1}
+.donut .ctr span{font-size:.82rem;opacity:.8;margin-top:6px}
+
+/* support + flow */
+.sup{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media (max-width:760px){.sup{grid-template-columns:1fr}}
+.sup .box{background:var(--surface);border-radius:18px;padding:30px;border:1px solid var(--line)}
+.sup h3{font-family:var(--f-en);font-style:italic;font-size:1.5rem;color:var(--gold)}
+.sup h3 small{font-family:var(--f-body);font-style:normal;font-size:.9rem;color:var(--ink);margin-left:10px;font-weight:700}
+.sup ul{list-style:none;padding:0;margin:14px 0 0}
+.sup li{padding:12px 0 12px 30px;border-bottom:1px dashed var(--line);position:relative}
+.sup li:last-child{border-bottom:0}
+.sup li::before{content:"";position:absolute;left:4px;top:1.15em;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--gold-2),var(--gold))}
+
+ol.flow{list-style:none;margin:72px 0 0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:14px;counter-reset:s;position:relative}
+ol.flow::before{content:"";position:absolute;left:3%;right:3%;top:34px;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-2))}
+ol.flow li{counter-increment:s;text-align:center;position:relative;min-width:0}
+ol.flow li .dot{width:68px;height:68px;margin:0 auto;border-radius:50%;background:var(--surface);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--f-en);font-style:italic;font-weight:800;font-size:1.4rem;color:var(--navy);position:relative;transition:transform .3s,background .3s}
+:root[data-theme="dark"] ol.flow li .dot{color:var(--gold-2)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) ol.flow li .dot{color:var(--gold-2)}}
+ol.flow li:hover .dot{transform:scale(1.1);background:var(--gold-2);color:var(--navy)}
+ol.flow li:last-child .dot{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:var(--navy)}
+ol.flow b{display:block;margin-top:14px;font-size:.96rem}
+ol.flow span{display:block;font-size:.78rem;color:var(--ink-2);margin-top:4px}
+@media (max-width:900px){ol.flow{grid-template-columns:repeat(3,1fr);row-gap:36px}ol.flow::before{display:none}}
+@media (max-width:480px){ol.flow{grid-template-columns:1fr 1fr}}
+
+/* terms */
+dl.terms{display:grid;grid-template-columns:220px 1fr;margin:0;background:var(--surface);border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+dl.terms dt,dl.terms dd{padding:18px 26px;border-bottom:1px solid var(--line);margin:0}
+dl.terms dt{font-weight:700;background:color-mix(in srgb,var(--gold) 8%,var(--surface))}
+dl.terms dd{color:var(--ink-2)}
+dl.terms dt:last-of-type,dl.terms dd:last-of-type{border-bottom:0}
+@media (max-width:560px){dl.terms{grid-template-columns:1fr}dl.terms dt{border-bottom:0;padding-bottom:6px}dl.terms dd{padding-top:0}}
+
+/* faq */
+.faq{max-width:880px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;padding:24px 48px 24px 0;font-weight:700;list-style:none;position:relative;font-size:1.02rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";font-family:var(--f-en);font-style:italic;font-weight:800;color:var(--gold);margin-right:14px;font-size:1.3rem}
+.faq summary::after{content:"";position:absolute;right:10px;top:50%;width:14px;height:14px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:translateY(-70%) rotate(45deg);transition:transform .3s}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.faq details p{padding:0 0 24px 34px;color:var(--ink-2)}
+
+/* contact */
+.contact{position:relative;color:var(--on-navy);background:var(--navy)}
+.contact .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;max-width:none;opacity:.35}
+.contact::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(12,22,64,.7),rgba(12,22,64,.95))}
+.contact .bgwm{color:rgba(240,215,140,.07);z-index:0}
+.contact .intro{color:var(--on-navy);opacity:.85}
+.cform{display:grid;grid-template-columns:1fr 1fr;gap:20px 24px;max-width:900px;background:rgba(255,255,255,.06);border:1px solid rgba(240,215,140,.25);border-radius:24px;padding:36px;backdrop-filter:blur(10px)}
+.cform .full{grid-column:1/-1}
+@media (max-width:640px){.cform{grid-template-columns:1fr;padding:24px 18px}}
+.cform label{display:block;font-size:.84rem;font-weight:700;margin-bottom:6px}
+.cform input,.cform select,.cform textarea{width:100%;font:inherit;padding:13px 16px;border-radius:12px;border:1px solid rgba(246,242,230,.28);background:rgba(246,242,230,.08);color:var(--on-navy);transition:border-color .25s,background .25s}
+.cform input:focus,.cform select:focus,.cform textarea:focus{border-color:var(--gold-2);background:rgba(246,242,230,.14);outline:none}
+.cform input::placeholder,.cform textarea::placeholder{color:rgba(246,242,230,.45)}
+.cform select option{color:#111a3a}
+.cform fieldset{border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}
+.cform legend{font-size:.84rem;font-weight:700;margin-bottom:10px;padding:0}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-block;padding:9px 18px;border:1px solid rgba(246,242,230,.35);border-radius:999px;cursor:pointer;font-size:.9rem;transition:all .25s}
+.chip input:checked + span{background:linear-gradient(120deg,var(--gold),var(--gold-2));color:var(--gold-ink);border-color:transparent;font-weight:700}
+.chip input:focus-visible + span{outline:3px solid var(--gold-2);outline-offset:2px}
+.contact .mail{font-family:var(--f-en);font-size:1.15rem;color:var(--gold-2);user-select:all}
+.copy{font:inherit;font-size:.78rem;margin-left:8px;padding:3px 12px;border-radius:999px;border:1px solid rgba(240,215,140,.5);background:transparent;color:var(--on-navy);cursor:pointer}
+.copy:hover{background:rgba(240,215,140,.15)}
+.form-msg{grid-column:1/-1;background:rgba(240,215,140,.14);border-left:4px solid var(--gold-2);padding:12px 16px;font-size:.92rem;border-radius:6px}
+
+footer{padding-block:56px;font-size:.85rem;color:var(--ink-2);background:var(--bg)}
+footer .grid{display:grid;grid-template-columns:1.3fr 1fr;gap:36px}
+footer b{color:var(--ink);font-size:1rem}
+footer dl{display:grid;grid-template-columns:6em 1fr;gap:6px 12px;margin:14px 0 0}
+footer dd{margin:0}
+footer .legal{grid-column:1/-1;font-size:.74rem;border-top:1px solid var(--line);padding-top:18px}
+@media (max-width:760px){footer .grid{grid-template-columns:1fr}}
+
+.preview-banner{position:fixed;z-index:70;left:50%;bottom:calc(14px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ph-bg);color:var(--ph);font-size:.75rem;padding:6px 14px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.18);white-space:nowrap;max-width:calc(100vw - 32px);overflow:hidden;text-overflow:ellipsis}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv.pre{transform:none;opacity:1}
+}
+</style>
+</head>
+<body>
+
+
+<header class="top" id="hdr">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="ヤマダ エデュケーション事業部 トップへ">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9a14a"/><stop offset=".5" stop-color="#f0d78c"/><stop offset="1" stop-color="#c9a14a"/></linearGradient></defs><circle cx="20" cy="20" r="19" fill="none" stroke="url(#lg)" stroke-width="1.5"/><path d="M11 12l9 10 9-10M20 22v8" fill="none" stroke="url(#lg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span><b>YAMADA EDUCATION</b><small>株式会社ヤマダ エデュケーション事業部</small></span>
+    </a>
+    <nav class="gnav" aria-label="ページ内メニュー">
+      <a href="#about">事業部について</a>
+      <a href="#scale">新しい物差し</a>
+      <a href="#strength">加盟の強み</a>
+      <a href="#flow">開校までの流れ</a>
+      <a href="#faq">よくある質問</a>
+      <a href="https://ceokidsacademy.com/" target="_blank" rel="noopener">CEOキッズ公式 ↗</a>
+    </nav>
+    <a class="btn btn-gold btn-sm" href="#contact">お問い合わせ</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img class="hero-img" src="img/hero.webp" alt="コインの山から伸びる若芽" fetchpriority="high">
+  <div class="wm" aria-hidden="true">CEO Kids</div>
+  <div class="wrap">
+    <p class="eyebrow">CEOキッズアカデミー 加盟パートナー募集</p>
+    <h1 id="hero-title" aria-label="人間力高く、稼ぐ力を子供から。">人間力高く、<br><span class="gold-text">稼ぐ力</span>を子供から。</h1>
+    <p class="lead">偏差値とは別の、もうひとつの物差しを。ヤマダ エデュケーション事業部は、幼児から大学生までの「経営者脳」を育てるカリキュラムを構築・展開しています。その第一弾として、子どものためのビジネススクール「CEOキッズアカデミー」の教室を、あなたの街で一緒に開くパートナーを募集します。<br><small style="opacity:.85">株式会社ヤマダは、株式会社CEOキッズアカデミーとフランチャイズ契約を結んでいます。</small></p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="#contact">加盟について問い合わせる <span class="arw">→</span></a>
+      <a class="btn btn-line" href="https://ceokidsacademy.com/" target="_blank" rel="noopener">CEOキッズアカデミー公式サイト ↗</a>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">SCROLL</div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>人間力</span><span>稼ぐ力</span><span>経営者脳</span><span>幼児から大学生まで</span><span>CEO KIDS ACADEMY</span><span>未経験から開校</span>
+  <span>人間力</span><span>稼ぐ力</span><span>経営者脳</span><span>幼児から大学生まで</span><span>CEO KIDS ACADEMY</span><span>未経験から開校</span>
+</div></div>
+
+<div class="facts" aria-label="CEOキッズアカデミーの実績">
+  <div class="wrap grid">
+    <div class="fact rv"><div class="v num gold-text" data-count="2018">2018</div><div class="k">CEOキッズアカデミー設立年</div></div>
+    <div class="fact rv d1"><div class="v num"><span class="gold-text" data-count="2000" data-comma="1">2,000</span><small>名以上</small></div><div class="k">日本全国・世界各地から受講した親子（延べ）</div></div>
+    <div class="fact rv d2"><div class="v num"><span class="gold-text" data-count="8">8</span><small>回</small></div><div class="k">CEOキッズビジネスコンテスト開催（2026年）</div></div>
+    <div class="fact rv d3"><div class="v num"><span class="gold-text" data-count="7">7</span><small>媒体</small></div><div class="k">テレビ東京WBS・NHK・めざましテレビ等で紹介</div></div>
+    <p class="src">出典：CEOキッズアカデミー公式サイト（ceokidsacademy.com）掲載情報より</p>
+  </div>
+</div>
+
+<section class="sec" id="about">
+  <div class="bgwm" data-par="0.12" aria-hidden="true">Philosophy</div>
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <p class="kicker">About us</p>
+        <h2>幼児から大学生まで、<br>「稼ぐ力」と「人間力」を<br>一本の線で育てる。</h2>
+        <p class="intro">学年ごとに途切れる習い事ではなく、年齢に合わせて段階的に積み上がるカリキュラム体系をつくります。お金・ビジネス・リーダーシップを、暮らしと実践の中で学ぶことが共通の柱です。</p>
+      </div>
+      <div class="photo-frame rv d1"><div class="photo"><img src="img/pencils.webp" alt="色とりどりの色鉛筆" loading="lazy"><span class="cap">自分で考え、自分で決める。</span></div></div>
+    </div>
+
+    <div class="ruler rv" aria-label="対象年齢の物差し">
+      <div class="bar">
+        <div class="band on">CEOキッズアカデミー<span class="long">（年長〜高校生・保護者）展開中</span></div>
+        <div class="band next">準備中</div>
+        <div class="ticks" aria-hidden="true"></div>
+      </div>
+      <div class="stages">
+        <div class="stage"><p class="age">Age 5–6</p><h3>幼児（年長〜）</h3><p>人間力とマネー＆ビジネスリテラシーの土台</p></div>
+        <div class="stage"><p class="age">Age 6–12</p><h3>小学生</h3><p>起業家・投資家思考の基礎、英語プログラム</p></div>
+        <div class="stage"><p class="age">Age 12–15</p><h3>中学生</h3><p>学生起業コースで事業づくりを体験</p></div>
+        <div class="stage"><p class="age">Age 15–18</p><h3>高校生</h3><p>受験対策にも活かせる1年間の起業講座</p></div>
+        <div class="stage"><p class="age">Age 18–22</p><h3>大学生</h3><p>実践型プログラム <span class="ph">内容</span></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="scale">
+  <div class="bgwm" data-par="-0.1" aria-hidden="true">New Scale</div>
+  <div class="wrap">
+    <div class="split rev head">
+      <div class="photo-frame rv"><div class="photo"><img src="img/study.webp" alt="机に向かってノートに書き込む女の子" loading="lazy"><span class="cap">正解を覚えるより、自分の答えを書く。</span></div></div>
+      <div class="rv d1">
+        <p class="kicker">A new measure</p>
+        <h2>点数で比べる教室を、<br>もう一つ増やす必要はない。</h2>
+        <p class="intro">学習塾・英会話・プログラミング教室は、どれも「どれだけできるようになったか」を同じ物差しで競っています。CEOキッズアカデミーは、測るものそのものが違います。だから近隣の教室と価格で比べられにくく、既存教室の新コースとしても共存できます。</p>
+      </div>
+    </div>
+    <div class="cmp-wrap rv">
+      <table class="cmp">
+        <thead><tr><th scope="col">比べる軸</th><th scope="col">一般的な習い事・学習塾</th><th scope="col" class="us">CEOキッズアカデミー</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">何を測るか</th><td class="them">テストの点数・偏差値・級</td><td class="us">自分で考えた商品やビジネスプランを、人に伝えて動かせたか</td></tr>
+          <tr><th scope="row">答えの扱い</th><td class="them">決まった正解を覚える</td><td class="us">意見やアイデアを全肯定し、答えは子ども自身が決める</td></tr>
+          <tr><th scope="row">学びの出口</th><td class="them">模試・検定・受験</td><td class="us">年1回のCEOキッズビジネスコンテストで発表し、評価を受ける</td></tr>
+          <tr><th scope="row">保護者の関わり</th><td class="them">送迎と月謝の支払い</td><td class="us">ママ・パパアカデミーで、親も経営者思考の子育てを学ぶ</td></tr>
+          <tr><th scope="row">目指す姿</th><td class="them">良い学校・良い会社に入る</td><td class="us">世界のどこでも好きな仕事をつくり、自分の居場所を自分でつくる</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="strength">
+  <div class="bgwm" data-par="0.1" aria-hidden="true">Strength</div>
+  <div class="wrap">
+    <div class="head rv">
+      <p class="kicker">Why partner with us</p>
+      <h2>未経験からでも、<br>教室に「圧倒的な強み」を。</h2>
+      <p class="intro">CEOキッズアカデミー本部が掲げる、加盟校の3つの強みです。</p>
+    </div>
+    <div class="cards3">
+      <article class="card rv"><span class="big" aria-hidden="true">01</span><p class="lab">Blue ocean</p><h3>競合の少ない<br>「起業家教育」という領域</h3><p>子ども向けの起業家教育は、まだ担い手の少ない分野です。地域で最初の教室になれる可能性があります。</p></article>
+      <article class="card rv d1"><span class="big" aria-hidden="true">02</span><p class="lab">Curriculum</p><h3>誰でも教えられる、<br>伴走型の独自カリキュラム</h3><p>国際起業家イゲット千恵子監修の教材と講師養成講座で、ビジネス経験や指導経験がなくても授業を始められます。</p></article>
+      <article class="card rv d2"><span class="big" aria-hidden="true">03</span><p class="lab">Flexible style</p><h3>ライフスタイルに合わせた<br>自由な開校スタイル</h3><p>自宅、オンライン、既存教室の空き時間、学校への出張授業、企業研修など、場所と時間を選べます。</p></article>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec alt" id="pattern">
+  <div class="bgwm" data-par="-0.1" aria-hidden="true">Your Style</div>
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <p class="kicker">Ways to start</p>
+        <h2>あなたに合った<br>始め方を選べます。</h2>
+        <div class="patterns">
+          <div class="pat"><span class="no">1</span><div><p class="who">個人・主婦の方</p><h3>自宅やオンラインでプチ起業</h3><p>週末の数時間から始められます。子育て経験をそのまま活かせる仕事です。</p></div></div>
+          <div class="pat"><span class="no">2</span><div><p class="who">既存の教室運営者の方</p><h3>新規コースとして導入</h3><p>英語教室や学習塾に「起業家教育」を加えて、他の教室にはない選ばれる理由をつくります。</p></div></div>
+          <div class="pat"><span class="no">3</span><div><p class="who">教育事業者・法人の方</p><h3>本格的な事業展開</h3><p>複数校舎での展開や、法人ビジネスとしての導入に対応します。</p></div></div>
+        </div>
+      </div>
+      <div class="photo-frame rv d1"><div class="photo"><img src="img/teacher.webp" alt="子どもたちに教材を見せる女性の先生" loading="lazy"><span class="cap">未経験からでも、先生になれる。</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="course">
+  <div class="bgwm" data-par="0.1" aria-hidden="true">Courses</div>
+  <div class="wrap">
+    <div class="head rv">
+      <p class="kicker">Courses</p>
+      <h2>年長から保護者まで、ひとつの教室で。</h2>
+      <p class="intro">兄弟姉妹や親子で通えるため、1家庭あたりの関わりが長く続きやすいのが特長です。</p>
+    </div>
+    <div class="courses">
+      <div class="course rv"><span class="age">年長〜</span><h3>CEO子ども起業家<br>ベーシックコース</h3><p>人間力と、マネー＆ビジネスリテラシーを暮らしの中で身につける。</p></div>
+      <div class="course rv d1"><span class="age">小3〜</span><h3>CEO子ども起業家<br>アドバンスコース</h3><p>ビジネス思考の基礎と、夢を実現するための力を身につける。</p></div>
+      <div class="course rv d2"><span class="age">小3〜</span><h3>CEO子ども投資家コース</h3><p>大人になっても役立つ投資家思考を育み、自立した人生を送る力を身につける。</p></div>
+      <div class="course rv"><span class="age">英検準2級〜</span><h3>アドバンスコース<br>英語プログラム</h3><p>ビジネス思考の基礎と夢を実現する力を、英語で身につける。</p></div>
+      <div class="course rv d1"><span class="age">中学・高校</span><h3>受験対策<br>学生起業コース</h3><p>1年間で学生起業を基礎から学べる起業家育成プログラム。</p></div>
+      <div class="course rv d2"><span class="age">保護者</span><h3>CEOママアカデミー<br>パパアカデミー</h3><p>経営者思考の子育てと、親子で自立できる家族運営を学ぶ。</p></div>
+    </div>
+    <p class="note">コース内容はCEOキッズアカデミー公式サイトの掲載に基づきます。取り扱えるコースは、お問い合わせいただいた方にご案内します。</p>
+  </div>
+</section>
+
+<section class="sec alt" id="flow">
+  <div class="bgwm" data-par="-0.1" aria-hidden="true">Support</div>
+  <div class="wrap">
+    <div class="head rv">
+      <p class="kicker">Support &amp; Flow</p>
+      <h2>開講前も、開講後も、ひとりにしない。<br>最短<span class="gold-text">2ヶ月</span>で開校できます。</h2>
+    </div>
+    <div class="sup">
+      <div class="box rv"><h3>Before<small>開講前</small></h3><ul><li>講師養成講座で、教え方を基礎から習得</li><li>模擬授業研修で、本番前に練習</li><li>集客ノウハウの提供</li></ul></div>
+      <div class="box rv d1"><h3>After<small>開講後</small></h3><ul><li>定期的な勉強会</li><li>本部からの最新情報のアップデート</li><li>本部ホームページでの教室紹介</li><li>運営の相談窓口</li></ul></div>
+    </div>
+    <ol class="flow">
+      <li class="rv"><span class="dot">1</span><b>お問い合わせ</b><span>このページのフォームから</span></li>
+      <li class="rv d1"><span class="dot">2</span><b>個別のご案内</b><span>条件・費用をご返信します</span></li>
+      <li class="rv d2"><span class="dot">3</span><b>ご契約</b><span>ご希望に合うプランを選択</span></li>
+      <li class="rv"><span class="dot">4</span><b>講師養成講座</b><span>研修を受講</span></li>
+      <li class="rv d1"><span class="dot">5</span><b>開校準備・集客</b><span>ノウハウを提供します</span></li>
+      <li class="rv d2"><span class="dot">6</span><b>開校</b><span>開校後も伴走します</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="terms">
+  <div class="bgwm" data-par="0.1" aria-hidden="true">Terms</div>
+  <div class="wrap">
+    <div class="head rv">
+      <p class="kicker">Terms</p>
+      <h2>加盟条件の概要</h2>
+      <p class="intro">費用や契約条件はこのページには掲載していません。お問い合わせいただいた方に、個別にご返信します。</p>
+    </div>
+    <dl class="terms rv">
+      <dt>契約形態</dt><dd>株式会社ヤマダは、株式会社CEOキッズアカデミーとフランチャイズ契約を結んでいます</dd>
+      <dt>費用・契約条件</dt><dd>お問い合わせいただいた方に、個別にご返信します</dd>
+      <dt>研修</dt><dd>講師養成講座・模擬授業研修</dd>
+      <dt>必要な経験・資格</dt><dd>ビジネス経験・指導経験は不要です</dd>
+      <dt>開校できる場所</dt><dd>対面教室、オンライン教室、学校への出張授業、企業研修など</dd>
+      <dt>募集エリア</dt><dd>全国・海外（オンライン開校にも対応）</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="sec alt" id="faq">
+  <div class="bgwm" data-par="-0.1" aria-hidden="true">Q &amp; A</div>
+  <div class="wrap">
+    <div class="head rv"><p class="kicker">FAQ</p><h2>よくある質問</h2></div>
+    <div class="faq rv">
+      <details><summary>ビジネス経験や指導経験がなくても大丈夫ですか？</summary><p>はい、大丈夫です。講師養成講座と模擬授業研修で、教え方を基礎から身につけられます。</p></details>
+      <details><summary>どのような場所で開校できますか？</summary><p>対面の教室のほか、オンライン教室、学校への出張授業、企業研修などでも開校できます。ご自宅での開校も可能です。</p></details>
+      <details><summary>加盟にかかる費用はいくらですか？</summary><p>費用や契約条件はこのページには掲載していません。お問い合わせいただいた方に、個別にご返信します。</p></details>
+      <details><summary>生徒はどのように集めればよいですか？</summary><p>チラシやポスター、SNS、口コミ、インターネット広告などを組み合わせます。開講前に集客ノウハウを提供します。</p></details>
+      <details><summary>すでに塾や英語教室を運営していますが、併設できますか？</summary><p>はい。既存教室の新規コースとしての導入パターンがあります。空き時間を活用して始められます。</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact">
+  <img class="bgimg" src="img/tokyo.webp" alt="" loading="lazy">
+  <div class="bgwm" data-par="0.1" aria-hidden="true">Join us</div>
+  <div class="wrap">
+    <div class="head rv">
+      <p class="kicker">Contact</p>
+      <h2>子どもたちの未来の選択肢を広げる仕事を、<br><span class="gold-text">あなたの街から</span>一緒に。</h2>
+      <p class="intro">お問い合わせ・ご相談は無料です。入力は1分ほどで終わります。<br>送信先：<span class="mail" id="mailaddr">info@ceokidsacademy.com</span> <button type="button" class="copy" id="copy">コピー</button></p>
+    </div>
+    <form class="cform rv" id="cform" novalidate>
+      <fieldset class="full"><legend>ご希望の内容</legend>
+        <label class="chip"><input type="radio" name="kind" id="k1" value="加盟のお問い合わせ" checked><span>加盟のお問い合わせ</span></label>
+        <label class="chip"><input type="radio" name="kind" id="k2" value="個別相談"><span>個別相談</span></label>
+        <label class="chip"><input type="radio" name="kind" id="k3" value="その他"><span>その他</span></label>
+      </fieldset>
+      <div><label for="f-name">お名前</label><input id="f-name" name="name" autocomplete="name" required placeholder="山田 花子"></div>
+      <div><label for="f-org">会社名・教室名（任意）</label><input id="f-org" name="org" autocomplete="organization" placeholder="〇〇英語教室"></div>
+      <div><label for="f-mail">メールアドレス</label><input id="f-mail" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+      <div><label for="f-tel">電話番号（任意）</label><input id="f-tel" name="tel" type="tel" autocomplete="tel" placeholder="090-0000-0000"></div>
+      <div><label for="f-type">現在のご状況</label>
+        <select id="f-type" name="type"><option>個人・主婦（未経験）</option><option>教室・塾を運営中</option><option>教育事業者・法人</option><option>その他</option></select></div>
+      <div><label for="f-area">開校を検討しているエリア</label><input id="f-area" name="area" placeholder="例：愛知県名古屋市"></div>
+      <div class="full"><label for="f-msg">ご質問など（任意）</label><textarea id="f-msg" name="msg" rows="4"></textarea></div>
+      <div class="full"><button class="btn btn-gold" type="submit">この内容で問い合わせる <span class="arw">→</span></button></div>
+      <p class="form-msg" id="form-msg" hidden></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap grid">
+    <div>
+      <b>株式会社ヤマダ エデュケーション事業部</b>
+      <dl>
+        <dt>所在地</dt><dd>〒166-0004 東京都杉並区阿佐谷南3-1-27</dd>
+        <dt>メール</dt><dd>info@ceokidsacademy.com</dd>
+      </dl>
+    </div>
+    <div>
+      <b>CEOキッズアカデミーについて</b>
+      <p style="margin-top:14px">運営本部：株式会社CEOキッズアカデミー（2018年設立）<br>公式サイト：<a href="https://ceokidsacademy.com/" target="_blank" rel="noopener">ceokidsacademy.com ↗</a></p>
+    </div>
+    <p class="legal">CEOキッズアカデミーは株式会社CEOキッズアカデミーの登録商標です。株式会社ヤマダは、株式会社CEOキッズアカデミーとフランチャイズ契約を結んでいます。　写真：Unsplash　© 株式会社ヤマダ エデュケーション事業部</p>
+  </div>
+</footer>
+
+
+
+<script>
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // header on scroll
+  var hdr=document.getElementById('hdr');
+  function onScroll(){
+    hdr.classList.toggle('scrolled', scrollY>40);
+    if(reduce) return;
+    document.querySelectorAll('[data-par]').forEach(function(el){
+      var r=el.parentElement.getBoundingClientRect();
+      el.style.transform='translateX('+(r.top*parseFloat(el.dataset.par))+'px)';
+    });
+  }
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  // hero title: split into characters for staggered rise
+  if(!reduce){
+    var h=document.getElementById('hero-title'), i=0;
+    (function walk(node,gold){
+      Array.from(node.childNodes).forEach(function(n){
+        if(n.nodeType===3){
+          var frag=document.createDocumentFragment();
+          Array.from(n.textContent).forEach(function(c){
+            var s=document.createElement('span'); s.className=gold?'ch gold-text':'ch'; s.textContent=c;
+            s.setAttribute('aria-hidden','true'); s.style.animationDelay=(0.15+i*0.06)+'s'; i++; frag.appendChild(s);
+          });
+          n.replaceWith(frag);
+        } else if(n.nodeType===1 && n.tagName!=='BR'){ var g=n.classList.contains('gold-text'); if(g) n.classList.remove('gold-text'); walk(n,gold||g); }
+      });
+    })(h);
+  }
+
+  // reveal on scroll: only elements below the first screen get a subtle pre-state
+  var els=[].slice.call(document.querySelectorAll('.rv'));
+  if(!reduce && 'IntersectionObserver' in window){
+    var vh=innerHeight;
+    els.forEach(function(el){ if(el.getBoundingClientRect().top>vh) el.classList.add('pre'); });
+    var io=new IntersectionObserver(function(ents){
+      ents.forEach(function(e){ if(e.isIntersecting){ e.target.classList.remove('pre'); io.unobserve(e.target); } });
+    },{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){ io.observe(el); });
+    setTimeout(function(){ els.forEach(function(el){ if(el.getBoundingClientRect().top<innerHeight*1.2) el.classList.remove('pre'); }); },2500);
+  }
+
+  // count-up numbers (final value is in the HTML at rest)
+  function countUp(el){
+    var end=parseInt(el.dataset.count,10), comma=el.dataset.comma, start=end>1000&&end<3000&&!comma?end-60:0, t0=null, dur=1600;
+    function fmt(v){ return comma? v.toLocaleString('ja-JP') : String(v); }
+    function step(ts){ if(!t0)t0=ts; var p=Math.min(1,(ts-t0)/dur), e=1-Math.pow(1-p,3);
+      el.textContent=fmt(Math.round(start+(end-start)*e)); if(p<1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+  var nums=document.querySelectorAll('[data-count]');
+  if(!reduce && 'IntersectionObserver' in window){
+    var io2=new IntersectionObserver(function(ents){ ents.forEach(function(e){ if(e.isIntersecting){ countUp(e.target); io2.unobserve(e.target);} }); },{threshold:.6});
+    nums.forEach(function(n){ io2.observe(n); });
+  }
+
+
+  // copy address
+  document.getElementById('copy').addEventListener('click',function(){
+    var t='info@ceokidsacademy.com', b=this;
+    var done=function(){b.textContent='コピーしました';setTimeout(function(){b.textContent='コピー';},1800);};
+    try{navigator.clipboard.writeText(t).then(done,function(){selectAddr();});}catch(e){selectAddr();}
+    function selectAddr(){var r=document.createRange();r.selectNodeContents(document.getElementById('mailaddr'));var sel=getSelection();sel.removeAllRanges();sel.addRange(r);}
+  });
+
+  // form → mail to info@ceokidsacademy.com
+  document.getElementById('cform').addEventListener('submit', function(e){
+    e.preventDefault();
+    var name=document.getElementById('f-name'), mail=document.getElementById('f-mail'), msg=document.getElementById('form-msg');
+    if(!name.value.trim()||!mail.value.trim()||!mail.checkValidity()){
+      msg.textContent='お名前と、正しい形式のメールアドレスを入力してください。';
+      msg.hidden=false; (name.value.trim()?mail:name).focus(); return;
+    }
+    var kind=document.querySelector('input[name="kind"]:checked').value;
+    var v=function(id){return document.getElementById(id).value.trim();};
+    var body='【'+kind+'】\nお名前：'+v('f-name')+'\n会社名・教室名：'+v('f-org')+'\nメール：'+v('f-mail')+'\n電話：'+v('f-tel')+'\nご状況：'+v('f-type')+'\n検討エリア：'+v('f-area')+'\n\n'+v('f-msg');
+    var href='mailto:info@ceokidsacademy.com?subject='+encodeURIComponent('【CEOキッズアカデミー加盟】'+kind+'（'+v('f-name')+'様）')+'&body='+encodeURIComponent(body);
+    msg.textContent='メールソフトが開き、info@ceokidsacademy.com 宛の文面が入力されます。開かない場合は、上のアドレスへ直接メールでお送りください。';
+    msg.hidden=false;
+    location.href=href;
+  });
+})();
+</script>
+
+</body>
+</html>
