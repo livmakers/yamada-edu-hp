@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') out(405, ['ok' => false, 'error' => '
 
 // --- 2) よその画面からの送信を拒否 ---
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
-if ($origin !== '' && strpos(SITE_ORIGIN, 'YOUR-DOMAIN') === false
+if ($origin !== '' && strpos(SITE_ORIGIN, 'YOUR-' . 'DOMAIN') === false
     && $origin !== SITE_ORIGIN && $origin !== str_replace('://', '://www.', SITE_ORIGIN)) {
   out(403, ['ok' => false, 'error' => '不正な送信元です。']);
 }
