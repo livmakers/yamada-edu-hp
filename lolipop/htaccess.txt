@@ -1,0 +1,32 @@
+# ===== ロリポップ用 .htaccess（HTTPS強制・セキュリティ・表示高速化） =====
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# http:// で来たら https:// へ自動転送（無料SSL設定が終わってから有効になります）
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+# 見られては困るファイル（.で始まる・設定・データ）を隠す
+RewriteRule (^|/)\. - [F,L]
+RewriteRule ^_data(/|$) - [F,L]
+RewriteRule \.(md|txt\.bak|sh|py|log|ini|json)$ - [F,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+Header always set Strict-Transport-Security "max-age=31536000" env=HTTPS
+</IfModule>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/webp "access plus 30 days"
+ExpiresByType image/jpeg "access plus 30 days"
+ExpiresByType image/svg+xml "access plus 30 days"
+ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
