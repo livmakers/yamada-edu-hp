@@ -8,7 +8,7 @@ RewriteEngine On
 # http:// で来たら https:// へ自動転送（無料SSL設定が終わってから有効になります）
 RewriteCond %{HTTPS} off
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 # 見られては困るファイル（.で始まる・設定・データ）を隠す
 RewriteRule (^|/)\. - [F,L]
 RewriteRule ^_data(/|$) - [F,L]

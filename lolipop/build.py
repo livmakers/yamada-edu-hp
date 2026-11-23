@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """ロリポップ用ファイル一式を作る。使い方: python3 lolipop/build.py 本番ドメイン（例 example.jp）"""
 import sys, shutil, pathlib, re, zipfile
-dom = (sys.argv[1] if len(sys.argv) > 1 else 'YOUR-DOMAIN').strip().rstrip('/').replace('https://','').replace('http://','')
+arg = (sys.argv[1] if len(sys.argv) > 1 else 'YOUR-DOMAIN').strip().replace('https://','').replace('http://','')
+dom, _, sub = arg.partition('/')            # 例 web-yamada.co.jp/edu/ → dom=web-yamada.co.jp, sub=edu
+sub = sub.strip('/')
+prefix = '/' + (sub + '/' if sub else '')   # サイトの置き場所（/ または /edu/）
 root = pathlib.Path(__file__).resolve().parent.parent
 out = root / 'lolipop' / 'dist' / 'yamada-edu-hp'
 if out.exists(): shutil.rmtree(out)
@@ -10,14 +13,18 @@ for f in ['index.html','privacy.html','404.html','robots.txt','sitemap.xml','llm
     shutil.copy(root/f, out/f)
 shutil.copytree(root/'img', out/'img')
 shutil.copy(root/'lolipop'/'htaccess.txt', out/'htaccess.txt')  # SSL完了後にロリポップFTPで .htaccess に名前変更
-base = f'https://{dom}/'
+base = f'https://{dom}{prefix}'
 for f in ['index.html','privacy.html','robots.txt','sitemap.xml','llms.txt']:
     p = out/f; s = p.read_text(encoding='utf-8')
     s = s.replace('https://livmakers.github.io/yamada-edu-hp/', base)
     p.write_text(s, encoding='utf-8')
-p = out/'404.html'; p.write_text(p.read_text(encoding='utf-8').replace('/yamada-edu-hp/', '/'), encoding='utf-8')
+p = out/'404.html'; p.write_text(p.read_text(encoding='utf-8').replace('/yamada-edu-hp/', prefix), encoding='utf-8')
+p = out/'htaccess.txt'; h = p.read_text(encoding='utf-8').replace('ErrorDocument 404 /404.html', f'ErrorDocument 404 {prefix}404.html')
+if sub:  # 既存サイトの一部に置く場合、ドメイン全体に効くHSTSは既存サイトに影響するので外す
+    h = '\n'.join(l for l in h.splitlines() if 'Strict-Transport-Security' not in l) + '\n'
+p.write_text(h, encoding='utf-8')
 # PHPフォーム
-php = (root/'lolipop'/'contact.php').read_text(encoding='utf-8').replace('YOUR-DOMAIN', dom)
+php = (root/'lolipop'/'contact.php').read_text(encoding='utf-8').replace('YOUR-DOMAIN', dom).replace("'path' => '/'", f"'path' => '{prefix}'")
 (out/'contact.php').write_text(php, encoding='utf-8')
 # index.html: CSP・罠欄・送信処理をPHP版に
 p = out/'index.html'; s = p.read_text(encoding='utf-8')
@@ -53,8 +60,8 @@ s = s.replace('また、当ウェブサイトはGitHub Pages（GitHub, Inc.）�
   'また、当ウェブサイトはロリポップ！レンタルサーバー（GMOペパボ株式会社）で公開しており、同社のサーバーにアクセス記録が残ります。お問い合わせフォームでは、なりすまし送信を防ぐためだけに一時的なCookie（ブラウザを閉じると消えるもの）を使用します。')
 p.write_text(s, encoding='utf-8')
 leftover = [f.name for f in out.rglob('*') if f.is_file() and f.suffix in ('.html','.txt','.xml','.php') and 'github.io' in f.read_text(encoding='utf-8')]
-zp = root/'lolipop'/'dist'/'yamada-edu-hp-lolipop.zip'
+zp = root/'lolipop'/'dist'/(sys.argv[2] if len(sys.argv) > 2 else 'yamada-edu-hp-lolipop.zip')
 with zipfile.ZipFile(zp,'w',zipfile.ZIP_DEFLATED) as z:
     for f in sorted(out.rglob('*')):
         if f.is_file(): z.write(f, 'yamada-edu-hp/'+str(f.relative_to(out)))
-print('domain:', dom, '| github.io残り:', leftover or 'なし', '| zip:', zp)
+print('url:', base, '| github.io残り:', leftover or 'なし', '| zip:', zp)
